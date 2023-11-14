@@ -1,43 +1,43 @@
-// //PERSON CLASS
-// class Person {
-//   constructor(name, age, gender) {
-//     this.name = name;
-//     this.age = age;
-//     this.gender = gender;
-//   }
+//PERSON CLASS
+class Person {
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
 
-//   displayDetails() {
-//     console.log(`Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}`);
-//   }
-// }
+  displayDetails() {
+    console.log(`Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}`);
+  }
+}
 
-// const person1 = new Person("Rakshana", 24, "female");
+const person1 = new Person("Rakshana", 24, "female");
 
-// person1.displayDetails();
+person1.displayDetails();
 
-// // UBER PRICE
-// class UberPriceCalculator {
-//   constructor(distance, duration, surgeMultiplier) {
-//     this.distance = distance;
-//     this.duration = duration;
-//     this.surgeMultiplier = surgeMultiplier || 1; 
-//   }
+// UBER PRICE
+class UberPriceCalculator {
+  constructor(distance, duration, surgeMultiplier) {
+    this.distance = distance;
+    this.duration = duration;
+    this.surgeMultiplier = surgeMultiplier || 1; 
+  }
 
-//   calculatePrice() {
-//     const baseFare = 5;
-//     const distanceRate = 70
-//     const durationRate = 2
+  calculatePrice() {
+    const baseFare = 5;
+    const distanceRate = 70
+    const durationRate = 2
 
-//     const totalFare = baseFare + (this.distance * distanceRate) + (this.duration * durationRate);
-//     const finalPrice = totalFare * this.surgeMultiplier;
+    const totalFare = baseFare + (this.distance * distanceRate) + (this.duration * durationRate);
+    const finalPrice = totalFare * this.surgeMultiplier;
 
-//     return finalPrice;
-//   }
-// }
+    return finalPrice;
+  }
+}
 
-// const uberTrip = new UberPriceCalculator(10, 20, 1.2); 
-// const totalPrice = uberTrip.calculatePrice();
-// console.log(`Uber Price: ${totalPrice.toFixed(2)}`);
+const uberTrip = new UberPriceCalculator(10, 20, 1.2); 
+const totalPrice = uberTrip.calculatePrice();
+console.log(`Uber Price: ${totalPrice.toFixed(2)}`);
 
 //MOVIES
 class Movie {
